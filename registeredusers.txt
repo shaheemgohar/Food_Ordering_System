@@ -1,0 +1,4 @@
+2;qwe;qwe;qwe;wqe;Vendor;0;
+1;qwe;qwe;qwe;wqe;Vendor;0;
+3;qwe;qwe;qwe;wqe;Customer;0;
+4;qwe;qwe;qwe;wqe;Customer;0;
