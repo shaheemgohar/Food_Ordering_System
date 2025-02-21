@@ -1,5 +1,7 @@
 package Adminn;
 
+import Runner.runnerDashboard;
+import Customer.customerDashboard;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -68,7 +70,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel4.setText("Designation");
 
-        loginRolecb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Customer", "Vendor", "Admin", "Manager" }));
+        loginRolecb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Customer", "Vendor", "Runner", "Admin", "Manager" }));
         loginRolecb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginRolecbActionPerformed(evt);
@@ -192,7 +194,14 @@ public class Login extends javax.swing.JFrame {
                 // If role is "Admin", dispose the login window and show the admin home page
                 this.dispose();
                 new adminHomePage().setVisible(true);
-            } 
+            } else if (entered_role.equals("Runner")){
+                this.dispose();
+                new Runner.runnerDashboard().setVisible(true);
+            } else if (entered_role.equals("Customer")){
+                this.dispose();
+                new Customer.customerDashboard().setVisible(true);
+            }
+            
         }
     } catch(IOException e) {
         JOptionPane.showMessageDialog(null, e.getMessage());

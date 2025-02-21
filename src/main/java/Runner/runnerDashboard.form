@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="UpdateStatus" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="AcceptTask" max="32767" attributes="0"/>
+                      <Component id="DeclineTask" max="32767" attributes="0"/>
+                      <Component id="ViewTask" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="RevenueDashboard" alignment="0" max="32767" attributes="0"/>
+                  <Component id="CustomerReview" alignment="0" max="32767" attributes="0"/>
+                  <Component id="CheckTaskHistory" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="ViewTask" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="AcceptTask" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="DeclineTask" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="CheckTaskHistory" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="CustomerReview" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="RevenueDashboard" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="UpdateStatus" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="90" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="ViewTask">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="View Task"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ViewTaskActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="AcceptTask">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Accept Task"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AcceptTaskActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="DeclineTask">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Decline Task"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeclineTaskActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="UpdateStatus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Update Task Status"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UpdateStatusActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="CheckTaskHistory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check Task History"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CheckTaskHistoryActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="CustomerReview">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Read Customer Review"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CustomerReviewActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="RevenueDashboard">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Show Revenue Dashboard"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RevenueDashboardActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Delivery Runner Dashboard"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

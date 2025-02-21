@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="25" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="ReviewOrder" alignment="0" max="32767" attributes="0"/>
+                          <Component id="OrderStatus" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="OrderHistory" min="-2" pref="147" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="TransactionHistory" pref="174" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jButton10" min="-2" pref="198" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="ViewMenu" min="-2" pref="96" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="ViewMenu1" min="-2" pref="96" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="ReadReview" min="-2" pref="165" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="PlaceOrder" min="-2" pref="96" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jButton11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="ViewMenu2" max="32767" attributes="0"/>
+                          <Component id="CancelOrder" pref="111" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="jButton11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="ViewMenu2" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ReadReview" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="PlaceOrder" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="CancelOrder" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="ViewMenu1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="OrderStatus" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="OrderHistory" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="TransactionHistory" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ReviewOrder" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="jButton10" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="ViewMenu" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="ViewMenu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Complains"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ViewMenuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ReadReview">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Read Customer Review"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReadReviewActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="PlaceOrder">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Place Order"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PlaceOrderActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="CancelOrder">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancel Order"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CancelOrderActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="OrderStatus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check Order Status"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OrderStatusActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="OrderHistory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check Order History"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OrderHistoryActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="TransactionHistory">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check Transaction History"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TransactionHistoryActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ReviewOrder">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Review for Each Order"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReviewOrderActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reorder Using Order History"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Customer Dashboard"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ViewMenu1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="View Menu"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ViewMenu1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ViewMenu2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check Notification"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ViewMenu2ActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
