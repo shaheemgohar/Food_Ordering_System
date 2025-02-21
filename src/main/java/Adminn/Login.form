@@ -44,9 +44,7 @@
                           <Component id="usernametxt" alignment="0" max="32767" attributes="0"/>
                           <Component id="passwordtxt" alignment="0" min="-2" pref="224" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="forgotPasswordBtn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <EmptySpace min="33" pref="161" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -76,9 +74,8 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="loginRolecb" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="forgotPasswordBtn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="33" max="32767" attributes="0"/>
+              <EmptySpace pref="34" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="loginbtn" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
                   <Component id="clearbtn" alignment="3" min="-2" pref="46" max="-2" attributes="0"/>
@@ -153,14 +150,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="usernametxt">
-    </Component>
-    <Component class="javax.swing.JButton" name="forgotPasswordBtn">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Forgot Password"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="forgotPasswordBtnActionPerformed"/>
-      </Events>
     </Component>
   </SubComponents>
 </Form>

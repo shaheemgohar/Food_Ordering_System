@@ -6,7 +6,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 
 /**
@@ -83,6 +85,7 @@ public class adminUserRegistration extends javax.swing.JFrame implements adminTa
         jScrollPane1 = new javax.swing.JScrollPane();
         userRegistrationTable = new javax.swing.JTable();
         helpbtn = new javax.swing.JButton();
+        searchFieldtxt = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -174,20 +177,20 @@ public class adminUserRegistration extends javax.swing.JFrame implements adminTa
             }
         });
 
+        searchFieldtxt.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                searchFieldtxtKeyReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(backbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(289, 289, 289)
-                .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createSequentialGroup()
@@ -216,34 +219,46 @@ public class adminUserRegistration extends javax.swing.JFrame implements adminTa
                                 .addComponent(updatebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(44, 44, 44)
                         .addComponent(helpbtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(42, 42, 42)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(deletebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(190, 190, 190))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(183, 183, 183))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(searchFieldtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 309, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(25, 25, 25)))
+                                .addGap(24, 24, 24))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(backbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7)
+                        .addGap(44, 44, 44)
                         .addComponent(jLabel8)
-                        .addGap(198, 198, 198))))
+                        .addGap(177, 177, 177))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel7))
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(backbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(backbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabel8)))
+                .addGap(27, 27, 27)
+                .addComponent(searchFieldtxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(287, 287, 287)
+                        .addComponent(deletebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel1)
@@ -272,9 +287,8 @@ public class adminUserRegistration extends javax.swing.JFrame implements adminTa
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(addbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(updatebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(helpbtn)
-                            .addComponent(deletebtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 94, Short.MAX_VALUE))
+                            .addComponent(helpbtn))))
+                .addGap(0, 63, Short.MAX_VALUE))
         );
 
         pack();
@@ -439,6 +453,13 @@ public class adminUserRegistration extends javax.swing.JFrame implements adminTa
     private void userRegistrationTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userRegistrationTableMouseClicked
         populateFormTableSelection();
     }//GEN-LAST:event_userRegistrationTableMouseClicked
+
+    private void searchFieldtxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchFieldtxtKeyReleased
+        DefaultTableModel table = (DefaultTableModel) userRegistrationTable.getModel();
+        TableRowSorter<DefaultTableModel> obj = new TableRowSorter<>(table);
+        userRegistrationTable.setRowSorter(obj);
+        obj.setRowFilter(RowFilter.regexFilter(searchFieldtxt.getText()));
+    }//GEN-LAST:event_searchFieldtxtKeyReleased
     
     private void populateFormTableSelection(){
         int SelectedRow = userRegistrationTable.getSelectedRow();
@@ -511,6 +532,7 @@ public class adminUserRegistration extends javax.swing.JFrame implements adminTa
     private javax.swing.JPasswordField passwordtxt;
     private javax.swing.JTextField phonetxt;
     private javax.swing.JComboBox<String> rolecb;
+    private javax.swing.JTextField searchFieldtxt;
     private javax.swing.JButton updatebtn;
     private javax.swing.JTextField userIDtxt;
     private javax.swing.JTable userRegistrationTable;

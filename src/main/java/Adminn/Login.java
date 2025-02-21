@@ -44,7 +44,6 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         usernametxt = new javax.swing.JTextField();
-        forgotPasswordBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,13 +83,6 @@ public class Login extends javax.swing.JFrame {
 
         jLabel3.setText("Password");
 
-        forgotPasswordBtn.setText("Forgot Password");
-        forgotPasswordBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                forgotPasswordBtnActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -113,9 +105,7 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(loginRolecb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(usernametxt)
                             .addComponent(passwordtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(forgotPasswordBtn)
-                        .addGap(33, 33, 33))))
+                        .addGap(33, 161, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGap(231, 231, 231)
                 .addComponent(jLabel1)
@@ -137,9 +127,8 @@ public class Login extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(loginRolecb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(forgotPasswordBtn))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                    .addComponent(loginRolecb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(loginbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(clearbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -188,7 +177,7 @@ public class Login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Invalid login");
         } else if(account_found) {
             // If login is successful, check the selected role
-            
+            String loggedUsername  = entered_username;
 
             if (entered_role.equals("Admin")) {
                 // If role is "Admin", dispose the login window and show the admin home page
@@ -212,10 +201,6 @@ public class Login extends javax.swing.JFrame {
         usernametxt.setText("");
         passwordtxt.setText("");
     }//GEN-LAST:event_clearbtnActionPerformed
-
-    private void forgotPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_forgotPasswordBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_forgotPasswordBtnActionPerformed
 
     private void loginRolecbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginRolecbActionPerformed
         // TODO add your handling code here:
@@ -258,7 +243,6 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton clearbtn;
-    private javax.swing.JButton forgotPasswordBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
