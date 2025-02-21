@@ -22,7 +22,7 @@ public class adminHomePage extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        customerTopUpBtn = new javax.swing.JButton();
         adminUserRegbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -33,13 +33,19 @@ public class adminHomePage extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel2.setText("Admin Home Page");
 
-        jButton1.setText("Top-Up Customer Credit");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        customerTopUpBtn.setBackground(new java.awt.Color(160, 200, 120));
+        customerTopUpBtn.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        customerTopUpBtn.setForeground(new java.awt.Color(0, 0, 0));
+        customerTopUpBtn.setText("Customer Top Up");
+        customerTopUpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                customerTopUpBtnActionPerformed(evt);
             }
         });
 
+        adminUserRegbtn.setBackground(new java.awt.Color(221, 235, 157));
+        adminUserRegbtn.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        adminUserRegbtn.setForeground(new java.awt.Color(0, 0, 0));
         adminUserRegbtn.setText("User Registration");
         adminUserRegbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,7 +63,7 @@ public class adminHomePage extends javax.swing.JFrame {
                         .addGap(111, 111, 111)
                         .addComponent(adminUserRegbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(43, 43, 43)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(customerTopUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(198, 198, 198)
                         .addComponent(jLabel2))
@@ -76,7 +82,7 @@ public class adminHomePage extends javax.swing.JFrame {
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(adminUserRegbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(customerTopUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(95, Short.MAX_VALUE))
         );
 
@@ -84,11 +90,11 @@ public class adminHomePage extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void customerTopUpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerTopUpBtnActionPerformed
         this.dispose();
         new adminCustomerTopUp().setVisible(true);
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_customerTopUpBtnActionPerformed
 
     private void adminUserRegbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminUserRegbtnActionPerformed
         this.dispose();
@@ -133,7 +139,7 @@ public class adminHomePage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton adminUserRegbtn;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton customerTopUpBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

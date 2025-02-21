@@ -1,0 +1,3 @@
+reviewId;orderId;customerName;rating;reviewText
+rev001;order001;John;5;Great burger!
+rev002;order002;Jane;4;Good fries!
