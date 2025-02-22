@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class adminFileHandler {
     
     public static void writeToFile(ArrayList<adminUserRegistrationClass> users, String filename){
-        try(BufferedWriter br = new BufferedWriter(new FileWriter(filename, true));){            //// No need to manually close 'writer'—it's automatically closed when the try block exits
+        try(BufferedWriter br = new BufferedWriter(new FileWriter(filename, true));){  //// No need to manually close 'writer'—it's automatically closed when the try block exits
             
             for(adminUserRegistrationClass user: users){
                 br.write(user.toString());

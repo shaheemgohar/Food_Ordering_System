@@ -15,7 +15,6 @@ public class adminUserRegistrationSubClass extends adminUserRegistrationClass {
     ArrayList<adminUserRegistrationClass> Registeruser;
     
     //constructor
-    //for customer
     public adminUserRegistrationSubClass(String userID, String username, String password, String name, String phone, String rolecb, String balance) {
         super(userID, username, password, name, phone, rolecb, balance);
         Registeruser = new ArrayList<>();

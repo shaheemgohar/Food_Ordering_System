@@ -177,7 +177,7 @@ public class runnerDashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_CustomerReviewActionPerformed
 
     private void RevenueDashboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RevenueDashboardActionPerformed
-        RevenueDashboard revenuedashboard = new RevenueDashboard();
+        runnerRevenueDashboard revenuedashboard = new runnerRevenueDashboard();
         this.setVisible(false);
         revenuedashboard.setVisible(true);
     }//GEN-LAST:event_RevenueDashboardActionPerformed

@@ -1,5 +1,7 @@
 package Customer;
 
+
+import Adminn.Login;
 import java.awt.Color;
 
 /*
@@ -270,13 +272,15 @@ public class customerDashboard extends javax.swing.JFrame {
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // Back to customerDashboard button action
         // Create an instance of customerDashboard JFrame
-        CustomerLogin dashboardFrame = new CustomerLogin();
+//        CustomerLogin dashboardFrame = new CustomerLogin();
 
         // Make the customerDashboard JFrame visible
-        dashboardFrame.setVisible(true);
+//        dashboardFrame.setVisible(true);
 
         // Close the current ViewMenu JFrame
         this.dispose();
+        new Adminn.Login().setVisible(true);
+        
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void ViewMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewMenu1ActionPerformed

@@ -3,6 +3,7 @@ package Adminn;
 import Runner.runnerDashboard;
 import Customer.customerDashboard;
 import Vendor.vendorMain;
+import Manager.managerHomePage;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -198,6 +199,9 @@ public class Login extends javax.swing.JFrame {
             } else if (entered_role.equals("Vendor")){
                 this.dispose();
                 new Vendor.VendorDashboard(loggedUsername, "Ahmed Bin Faisal").setVisible(true);
+            } else if(entered_role.equals("Manager")){
+                this.dispose();
+                new Manager.managerHomePage().setVisible(true);
             }
             
         }

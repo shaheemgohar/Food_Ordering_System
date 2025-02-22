@@ -156,9 +156,9 @@ public class complains extends javax.swing.JFrame {
                     return;
                 }
 
-                String complaintData = userID + ";" + subject + ";" + description + ";" + status + ";\n";
+                String complaintData = userID + ";" + subject + ";" + description + ";" + status + ";" + "Customer" + ";\n";
 
-                try (FileWriter writer = new FileWriter("complain.txt", true)) {
+                try (FileWriter writer = new FileWriter("customerComplain.txt", true)) {
                     writer.write(complaintData);
                     JOptionPane.showMessageDialog(this, "Complaint saved successfully!");
                     
