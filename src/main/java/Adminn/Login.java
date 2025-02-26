@@ -189,7 +189,9 @@ public class Login extends javax.swing.JFrame {
             if (entered_role.equals("Admin")) {
                 // If role is "Admin", dispose the login window and show the admin home page
                 this.dispose();
-                new adminHomePage().setVisible(true);
+                adminHomePage homepage = new adminHomePage();
+                homepage.setVisible(true);
+                homepage.setUsername(entered_username);
             } else if (entered_role.equals("Runner")){
                 this.dispose();
                 new Runner.runnerDashboard().setVisible(true);

@@ -24,6 +24,7 @@ public class adminHomePage extends javax.swing.JFrame {
         customerTopUpBtn = new javax.swing.JButton();
         adminUserRegbtn = new javax.swing.JButton();
         logoutBtn = new javax.swing.JButton();
+        homepagelbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,6 +61,9 @@ public class adminHomePage extends javax.swing.JFrame {
             }
         });
 
+        homepagelbl.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        homepagelbl.setText("username");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -76,14 +80,18 @@ public class adminHomePage extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(homepagelbl)))
                 .addContainerGap(128, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(homepagelbl))
                 .addGap(29, 29, 29)
                 .addComponent(jLabel2)
                 .addGap(33, 33, 33)
@@ -97,6 +105,11 @@ public class adminHomePage extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    public void setUsername(String user){
+        homepagelbl.setText(user);
+    }
+    
+    
     private void customerTopUpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerTopUpBtnActionPerformed
         this.dispose();
         new adminCustomerTopUp().setVisible(true);
@@ -152,6 +165,7 @@ public class adminHomePage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton adminUserRegbtn;
     private javax.swing.JButton customerTopUpBtn;
+    private javax.swing.JLabel homepagelbl;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton logoutBtn;
     // End of variables declaration//GEN-END:variables
