@@ -8,6 +8,7 @@ import Manager.managerHomePage;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -191,7 +192,14 @@ public class Login extends javax.swing.JFrame {
                 this.dispose();
                 adminHomePage homepage = new adminHomePage();
                 homepage.setVisible(true);
-                homepage.setUsername(entered_username);
+                ArrayList<adminUserRegistrationClass> userss = adminFileHandler.readFromFile("registeredusers.txt");
+                for(adminUserRegistrationClass user: userss){
+                    if(user.username.equals(entered_username)){
+                        homepage.setUsername(user);
+                        break;
+                    }
+                    
+                }
             } else if (entered_role.equals("Runner")){
                 this.dispose();
                 new Runner.runnerDashboard().setVisible(true);

@@ -105,8 +105,8 @@ public class adminHomePage extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    public void setUsername(String user){
-        homepagelbl.setText(user);
+    public void setUsername(adminUserRegistrationClass user){
+        homepagelbl.setText(user.username);
     }
     
     
